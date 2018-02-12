@@ -76,18 +76,24 @@ li a {
   background-color: var(--primary-dark);
   text-decoration: none;
   display: block;
+  font-size: 1em;
 }
 
 .material-icons {
-  display: none;
-  color: var(--accent-color);
-  padding: 1rem;
-  float: right;
-  font-size: 10vw;
+
 }
 
-#more:active, #more:hover {
-  background: red;
+#menu{
+  /* display: none; */
+  color: var(--accent-color);
+  float: right;
+  margin-right: 15px;
+  font-size: 14px;
+  /* font-size: 10vw; */
+  /* margin: 15px; */
+;
+
+
 }
 
 #circle {
@@ -172,10 +178,11 @@ footer p {
   background-color: var(--accent-color);
 }
 
-.material-icons: hover , li {
+/* .material-icons: hover , li {
   display: inline;
 
-  }
+  } */
+
 
 /* header:hover {
     color: red;
@@ -184,13 +191,18 @@ footer p {
 
 
 @media screen and (max-width:500px) {
-  nav li:not(#pinned) {
-    /* transition: opacity 1s ease-out;
-    opacity: 0; */
+  .mainNav li:not(.pinned) {
+    position: relative;
+    display: none;
+    
+      top: -500px;
 
-    nav li:not(#pinned) {
 
-    }
+  }
+
+  nav li{
+
+    display: block;
   }
   main {
     margin: auto;
@@ -202,6 +214,25 @@ footer {
   position: relative;
   font-size: 10px;
 }
+
+.mainNav.responsive li {
+  display: block;
+  transition-delay: 5s;
+  transition: ease 1s;
+  top:0px;
+}
+
+
+
+#menu {
+  display: block;
+  position: relative;
+  top: -25px;
+  background-color: var(--accent-color);
+  /* border: solid 1px;
+  border-radius: 35px; */
+}
+
 }
 
 /* @media screen and (max-width:490px) {

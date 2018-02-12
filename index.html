@@ -17,14 +17,17 @@
 
 </header>
 <!-- <div id="circle"></div> -->
-<nav>
+<nav class=mainNav id = mainNavigation>
 
   <ul>
-    <li id="pinned" class="active"><a href="index.html">Home</a></li>
+    <li class="pinned" class="active"><a href="index.html">Home</a></li>
     <li> <a href="lit-review.html">Literature Review</a></li>
     <li><a href="#">Discovery Log</a></li>
     <li> <a href="video.html">Video</a></li>
-    <li id="pinned" class="material-icons">menu</li>
+
+    <li id="menu"> <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a></li>
+    <!-- class ="pinned" -->
+    <!-- <li class="material-icons pinned" id ="menu" >menu</li> -->
   </ul>
 </nav>
 
@@ -115,5 +118,16 @@
     alert("You are using an outdated internet browser (Internet Explorer).\nPlease considerupdating for a better user experience");
   </script>
 <![endif]-->
+
+<script>
+function myFunction() {
+    var x = document.getElementById("mainNavigation");
+    if (x.className === "mainNav") {
+        x.className += " responsive";
+    } else {
+        x.className = "mainNav";
+    }
+}
+</script>
 
 </html>
