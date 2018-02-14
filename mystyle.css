@@ -54,7 +54,7 @@ nav ul {
 
 }
 
-nav li a:hover {
+nav li:hover {
   color: Black;
   background-color: var(--accent-color);
 }
@@ -70,10 +70,9 @@ ul {
   width: 100%;
 }
 
-li a {
+li a:not(#menu){
   color: white;
   padding: 1rem;
-  background-color: var(--primary-dark);
   text-decoration: none;
   display: block;
   font-size: 1em;
@@ -83,17 +82,16 @@ li a {
 
 }
 
-#menu{
+#menu {
   /* display: none; */
-  color: var(--accent-color);
+  /* color: var(--primary-color); */
+  /* background-color: var(--primary-color); */
   float: right;
   margin-right: 15px;
-  font-size: 14px;
+  padding: inherit;
+  font-size: 15px;
   /* font-size: 10vw; */
   /* margin: 15px; */
-;
-
-
 }
 
 #circle {
@@ -194,7 +192,7 @@ footer p {
   .mainNav li:not(.pinned) {
     position: relative;
     display: none;
-    
+
       top: -500px;
 
 
@@ -228,9 +226,11 @@ footer {
   display: block;
   position: relative;
   top: -25px;
-  background-color: var(--accent-color);
-  /* border: solid 1px;
-  border-radius: 35px; */
+  background-color: var(--primary-color);
+  color: var(--primary-color);
+  border: solid 1px;
+  padding: 1px;
+  border-radius: 100%;
 }
 
 }
