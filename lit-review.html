@@ -16,13 +16,14 @@
   <h1>Literature Review Page: 825573</h1>
 </header>
 <!-- <div id="circle"></div> -->
-<nav>
+<nav class=mainNav id = mainNavigation>
 
   <ul>
-    <li id="home"><a href ="index.html">Home</a></li>
+    <li class="pinned"><a href ="index.html">Home</a></li>
     <li class="active"><a href="lit-review.html">Literature Review</a></li>
     <li><a href="#">Discovery Log</a></li>
     <li><a href="video.html">Video</a></li>
+    <li id = "menu"> <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a></li>
   </ul>
 </nav>
 
@@ -239,6 +240,18 @@ Journal, 24(2), 186–221.
 </main>
 
 <footer>
-  <p>Thanks for having a look!</p>
+  <p>Thanks for having a look! <a href="files\825573-lit-review.pdf" download>Click to download a pdf version.</a></p>
 </footer>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("mainNavigation");
+    if (x.className === "mainNav") {
+        x.className += " responsive";
+    } else {
+        x.className = "mainNav";
+    }
+}
+</script>
+
 </html>

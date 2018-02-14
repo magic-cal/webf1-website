@@ -19,14 +19,14 @@
 
 
 <!-- <div id="circle"></div> -->
-<nav>
+<nav class=mainNav id = mainNavigation>
 
   <ul>
-    <li id="home"><a href="index.html">Home</a></li>
+    <li class="pinned"><a href="index.html">Home</a></li>
     <li> <a href="lit-review.html">Literature Review</a></li>
     <li><a href="#">Discovery Log</a></li>
     <li class="active"> <a href="video.html">Video</a></li>
-    <li id="pinned" class="material-icons">menu</li>
+    <li id = "menu"> <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a></li>
   </ul>
 </nav>
 
@@ -56,5 +56,16 @@
   <p class="copyright"> &copy; Copyright 2018: 825573</p>
 
 </footer>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("mainNavigation");
+    if (x.className === "mainNav") {
+        x.className += " responsive";
+    } else {
+        x.className = "mainNav";
+    }
+}
+</script>
 
 </html>
