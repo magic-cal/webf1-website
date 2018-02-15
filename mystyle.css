@@ -127,6 +127,7 @@ article p, article h3 {
   margin-top: 1em;
   text-align: justify;
   text-justify: inter-word;
+  /**/
 }
 
 article i, article a {
@@ -139,13 +140,22 @@ a {
   word-break: break-all;
 }
 
-video{
+article video{
   width:100% ;
   /* controls:false; */
 }
 
-img {
+article img {
   width:100% ;
+}
+
+#html_valid{
+
+  height: auto;
+  width: 5em;
+  float: right;
+  background-position: 0px 0px;
+
 }
 
 footer {
