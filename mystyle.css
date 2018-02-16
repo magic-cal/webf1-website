@@ -263,8 +263,6 @@ footer {
   top:0px;
 }
 
-
-
 #menu {
   display: block;
   position: relative;
@@ -274,4 +272,5 @@ footer {
   border: solid 1px;
   padding: 1px;
   border-radius: 100%;
+}
 }
