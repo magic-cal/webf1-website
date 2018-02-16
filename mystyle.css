@@ -108,11 +108,15 @@ main {
   margin-bottom: 60px;
 }
 
-  main h2{
+   h2{
     text-align: center;
     text-decoration: underline;
 
 }
+.Intro p{
+  text-align: center;
+}
+
 article {
   padding: 1em;
   max-width: 55em;
