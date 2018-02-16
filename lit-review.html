@@ -24,7 +24,7 @@
     <li class="active"><a href="lit-review.html">Literature Review</a></li>
     <li><a href="discovery-log.html">Discovery Log</a></li>
     <li><a href="video.html">Video</a></li>
-    <li id = "menu"> <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a></li>
+    <li id = "menu"> <a href="javascript:void(0);" onclick="myFunction()">&amp;#9776;</a></li>
   </ul>
 </nav>
 
@@ -35,34 +35,34 @@
 
 <h3>Introduction</h3>
 <p>
-With data growing exponentially every year <cite>(Raschke & Mann, 2017, p.58)</cite>, Implementing
+With data growing exponentially every year <cite>(Raschke &amp; Mann, 2017, p.58)</cite>, Implementing
 security measures regularly is vital <cite>(Keegan, 2017, p.16)</cite>. Three important areas in data
 security are: (a) protecting the data from unauthorised access, (b) protecting the system from
 unauthorised access and, (c) ensuring that there are no single points of failure <cite>(Ruivo,
-Santos, & Oliveira, 2014, p.712-714)</cite>. What is the single most important factor in the
+Santos, &amp; Oliveira, 2014, p.712-714)</cite>. What is the single most important factor in the
 securing of sensitive data?
 </p>
 <h3>Protecting data</h3>
 Corporate information systems have experienced increased attacks which result in the
-leaking of sensitive data <cite>(Ferreira & Vargas, 2015, p.2077)</cite>. In particular, hackers bypass
+leaking of sensitive data <cite>(Ferreira &amp; Vargas, 2015, p.2077)</cite>. In particular, hackers bypass
 security systems by exploiting vulnerabilities in storage systems <cite>(Poh et al., 2017, p.1)</cite>.
 Therefore, securing data is considered a significant component in the reduction of corporate
 damage after a ‘breach’.
 
 <p>By law, all personal data stored must be secured in accordance with the Data Protection Act
-1998 (2015). For some, "Encryption has been adopted as a possible solution" <cite>(Boonkrong &
+1998 (2015). For some, "Encryption has been adopted as a possible solution" <cite>(Boonkrong &amp;
 Somboonpattanakit, 2016, p.28)</cite>. However, the situation is complex. Consider the reversible
 ciphertext method for storing data, which uses different ‘keys' to encrypt information and
-protect against unauthorised access. According to Boonkrong & Somboonpattanakit <cite>(2016,
+protect against unauthorised access. According to Boonkrong &amp; Somboonpattanakit <cite>(2016,
 p.28)</cite>, this is often poorly executed as the key is usually stored in the same database.
-Another vulnerability is highlighted by Iyer, Sedamkar, & Gupta <cite>(2016)</cite> where they show that
+Another vulnerability is highlighted by Iyer, Sedamkar, &amp; Gupta <cite>(2016)</cite> where they show that
 symmetric encryption is often too simple. They suggest, as computational power is becoming
 more prevalent, it has become more feasible to decrypt files using standard ‘brute force'
 algorithms much faster than was previously possible. This raises further concerns for
 standard encryption technologies. It has also been shown that for authorised users, the more
 secure asymmetric algorithm (two keys) is not as fast as required for modern systems. A
 hybrid system has been proposed to create a more secure algorithm with smaller processing
-times <cite>(Goyal & Kant, 2017, p.197)</cite>. Issues of improving algorithmic time and efficiency have
+times <cite>(Goyal &amp; Kant, 2017, p.197)</cite>. Issues of improving algorithmic time and efficiency have
 been the subject of considerable debate, yet less discussion has been around the crucial
 issue of what are termed honeywords, namely: "The use of decoys, realistic but fake objects
 to divert or detect attacks" <cite>(Juels, 2014, p. 1)</cite>. "A powerful tool for compromise detection and
@@ -74,48 +74,48 @@ hindering brute force attacks.
 stored, yet a numerical representation is. This implementation is less vulnerable as it allows
 secure verification without the password being stored in plain text <cite>(Ferbrache, 2016)</cite>.
 Unfortunately, by using a dictionary to look up common password hashes, the algorithm
-becomes redundant <cite>(Boonkrong & Somboonpattanakit, 2016, p.2)</cite>. To counteract this, a salt
+becomes redundant <cite>(Boonkrong &amp; Somboonpattanakit, 2016, p.2)</cite>. To counteract this, a salt
 is implemented by adding random characters to a password before hashing. This
 circumvents dictionary lookups as the hashed value will not be in the dictionary as the salt is
-unique <cite>(Kharod, Sharma & Sharma 2015, p.2)</cite>. It has been suggested to implement
+unique <cite>(Kharod, Sharma &amp; Sharma 2015, p.2)</cite>. It has been suggested to implement
 honeywords with hashing to raise alerts if specified passwords are used to access systems
 <cite>(Kharod et al., 2015, p.2)</cite>. The idea of storing real passwords with honeywords is also
-supported by Chakraborty & Mondal <cite>(2016)</cite> as this method provides warnings of attacks and
+supported by Chakraborty &amp; Mondal <cite>(2016)</cite> as this method provides warnings of attacks and
 prevents unauthorised access.
 <h3>Securing the system</h3>
 <p>For corporate systems to be secure, they need to prevent unauthorised access before
 encryption or hashing is needed. To organise security effectively "Authentication,
-authorization, and accounting are key" <cite>(Wilamowski, Dever, & Stuban, 2017, p.187)</cite>. These
+authorization, and accounting are key" <cite>(Wilamowski, Dever, &amp; Stuban, 2017, p.187)</cite>. These
 points allow verified access to just what selected users should have access to, whilst
 keeping a log of activity. The three-tier architecture supports this model and prevents against
-many forms of attacks <cite>(Singh, Jeong, & Park, 2016, p.217)</cite>. They continue: allowing firewalls
+many forms of attacks <cite>(Singh, Jeong, &amp; Park, 2016, p.217)</cite>. They continue: allowing firewalls
 to check for malicious incoming data is achieved by separating the application layer from the
 data storage layer. Although this is commonly used for in-house hosting, the popularity of
 cloud computing is exponentially increasing <cite>(Singh et al., 2016, p.217)</cite> and businesses are
 no exception.
 <p>
-Cloud systems store data in one centralized system <cite>(Kalaiprasath, Elankavi & Udayakumar,
+Cloud systems store data in one centralized system <cite>(Kalaiprasath, Elankavi &amp; Udayakumar,
 2017, p.605)</cite> therefore "If someone tries to illegally access the data, the hacker ends up
-getting the entire information stored". To improve this Goyal & Kant <cite>(2017)</cite> suggest more
+getting the entire information stored". To improve this Goyal &amp; Kant <cite>(2017)</cite> suggest more
 secure encryption. This method is still storing all data in one system though. Kalaiprasath,
-Elankavi & Udayakumar, <cite>(2017)</cite> argue that only parts of the data, stored on different
+Elankavi &amp; Udayakumar, <cite>(2017)</cite> argue that only parts of the data, stored on different
 systems, is more secure. "Migration of cloud computing from single toward multi-clouds to
-ensure the security of user's data"<cite>(AlZain, Soh, & Pardede, 2013, p.1071)</cite>. This model
+ensure the security of user's data"<cite>(AlZain, Soh, &amp; Pardede, 2013, p.1071)</cite>. This model
 prevents against complete data being stored in one location and therefore mitigating
-sensitive data exposure <cite>(Kaaniche & Laurent, 2017, p.137)</cite>. This method addresses
+sensitive data exposure <cite>(Kaaniche &amp; Laurent, 2017, p.137)</cite>. This method addresses
 "important security concerns namely data confidentiality, availability and integrity" <cite>(Kaaniche
-& Laurent, 2017, p.137)</cite>.
+&amp; Laurent, 2017, p.137)</cite>.
 <h3>System vulnerability</h3>
 <p>No matter how secure computer systems are, users must also be included as part of the
 security system. "Besides technology, human behaviour is generally seen as the biggest
-threat" <cite>(Bauer, Bernroider, & Chudzikowski, 2017, p.146)</cite> which can undermine any
+threat" <cite>(Bauer, Bernroider, &amp; Chudzikowski, 2017, p.146)</cite> which can undermine any
 technological security in place. The password has been used since the 1960s "despite
 consensus among researchers that we need something more secure" <cite>(Bonneau, Herley, van
-Oorschot, & Stajano, 2015, p.78)</cite>. This dated system is one of the easiest ways for hackers
+Oorschot, &amp; Stajano, 2015, p.78)</cite>. This dated system is one of the easiest ways for hackers
 to access corporate data <cite>(Ferbrache, 2016)</cite>. With so many criteria being needed for
 passwords, it is a burden to remember strong unique passwords without memory aids
 <cite>(Bonneau et al., 2015)</cite>. This is supported by showing that the use of password managers
-provides a single point of failure for an information system <cite>(Florencio & Herley, 2007)</cite>. To be
+provides a single point of failure for an information system <cite>(Florencio &amp; Herley, 2007)</cite>. To be
 able to fully secure a system, companies should "concentrate on fostering employee
 information security awareness" <cite>(Bauer et al., 2017, p146.)</cite> as this underpins the entirety of
 the system and prevents single failure points.
@@ -134,14 +134,14 @@ infrastructure that is more secure than each element.
 
 
 <p class = "reference">
-AlZain, M. A., Soh, B., & Pardede, E. (2013).A Survey on Data Security Issues in Cloud
+AlZain, M. A., Soh, B., &amp; Pardede, E. (2013).A Survey on Data Security Issues in Cloud
 Computing: From Single to Multi-Clouds. Journal of Software Maintenance and Evolution:
 Research and Practice, 8(5), 1068-1075.
 <a href ="http://doi.org/DOI:10.4304/jsw.8.5.1068-1078">DOI:10.4304/jsw.8.5.1068-1078</a>
 <p class = "reference">
-Bauer, S., Bernroider, E. W. N., & Chudzikowski, K. (2017). Prevention is better than cure!
+Bauer, S., Bernroider, E. W. N., &amp; Chudzikowski, K. (2017). Prevention is better than cure!
 Designing information security awareness programs to overcome users’ non-compliance
-with information security policies in banks. Computers & Security, 68, 145–159.
+with information security policies in banks. Computers &amp; Security, 68, 145–159.
 <a href ="http://doi.org/10.1016/j.cose.2017.04.009">DOI: 10.1016/j.cose.2017.04.009</a>
 
 
@@ -149,16 +149,16 @@ with information security policies in banks. Computers & Security, 68, 145–159
 
 
 <p class = "reference">
-Bonneau, J., Herley, C., van Oorschot, P. C., & Stajano, F. (2015). Passwords and the
+Bonneau, J., Herley, C., van Oorschot, P. C., &amp; Stajano, F. (2015). Passwords and the
 evolution of imperfect authentication. Communications of the ACM, 58(7), 78–87.
 <a href ="http://doi.org/10.1145/2699390">DOI: 10.1145/2699390</a>
 <p class = "reference">
-Boonkrong, S., & Somboonpattanakit, C. (2016). Dynamic Salt Generation and Placement
+Boonkrong, S., &amp; Somboonpattanakit, C. (2016). Dynamic Salt Generation and Placement
 for Secure Password Storing. IAENG International Journal Of Computer Science., 43(1),
 27-36. Retrieved from <a href ="http://iaeng.org/IJCS/issues_v43/issue_1/IJCS_43_1_04.pdf">
   iaeng.org/IJCS/issues_v43/issue_1/IJCS_43_1_04.pdf</a>
 <p class = "reference">
-Chakraborty, N., & Mondal, S. (2016). Towards Improving Storage Cost and Security
+Chakraborty, N., &amp; Mondal, S. (2016). Towards Improving Storage Cost and Security
 Features of Honeyword Based Approaches. Procedia Computer Science, 93, 799–807.
 <a href ="http://doi.org/10.1016/j.procs.2016.07.298">DOI: 10.1016/j.procs.2016.07.298</a>
 <p class = "reference">
@@ -169,22 +169,22 @@ Ferbrache, D. (2016). Passwords are broken – the future shape of biometrics. B
 Technology Today, 2016(3), 5–7.
 <a href ="http://doi.org/10.1016/S0969-4765(16)30049-2">DOI :10.1016/S0969-4765(16)30049-2</a>
 <p class = "reference">
-Ferreira, R.S & Vargas, F. (2015). ShadowStack: A new approach for secure program
+Ferreira, R.S &amp; Vargas, F. (2015). ShadowStack: A new approach for secure program
 execution. Microelectronics Reliability, 55(9/10), 2078-2081.
 <a href ="http://doi.org/10.1016/j.microrel.2015.07.021">DOI: 10.1016/j.microrel.2015.07.021 </a>
 <p class = "reference">
-Florencio, D., & Herley, C. (2007, May). A large-scale study of web password habits. In
+Florencio, D., &amp; Herley, C. (2007, May). A large-scale study of web password habits. In
 Proceedings of the 16th international conference on World Wide Web (pp. 657-666). ACM.
 <a href ="http://doi.org/10.1145/1242572.1242661"> DOI: 10.1145/1242572.1242661</a>
 
 <p class = "reference">
-Goyal, V., & Kant, C. (2017). An Effective Hybrid Encryption Algorithm for Ensuring Cloud
-Data Security. In V. B. Aggarwal, V. Bhatnagar, & D. K. Mishra (Eds.), Big Data Analytics
+Goyal, V., &amp; Kant, C. (2017). An Effective Hybrid Encryption Algorithm for Ensuring Cloud
+Data Security. In V. B. Aggarwal, V. Bhatnagar, &amp; D. K. Mishra (Eds.), Big Data Analytics
 (Vol. 654, pp. 195–210). Singapore: Springer Singapore.
 <a href ="http://doi.org/10.1007/978-981-10-6620-7_20">DOI: 10.1007/978-981-10-6620-7_20 </a>
 
 <p class = "reference">
-Iyer, S. C., Sedamkar, R. R., & Gupta, S. (2016). A Novel Idea on Multimedia Encryption
+Iyer, S. C., Sedamkar, R. R., &amp; Gupta, S. (2016). A Novel Idea on Multimedia Encryption
 Using Hybrid Crypto Approach. Procedia Computer Science, 79, 293–298.
 <a href ="http://doi.org/10.1016/j.procs.2016.03.038">DOI: 10.1016/j.procs.2016.03.038 </a>
 <p class = "reference">
@@ -192,21 +192,21 @@ Juels, A. (2014). A bodyguard of lies. In Proceedings of the 19th ACM symposium 
 Access control models and technologies - SACMAT ’14.
 <a href ="http://doi.org/10.1145/2613087.2613088">DOI: 10.1145/2613087.2613088 </a>
 <p class = "reference">
-Kaaniche, N., & Laurent, M. (2017). Data security and privacy preservation in cloud storage
+Kaaniche, N., &amp; Laurent, M. (2017). Data security and privacy preservation in cloud storage
 environments based on cryptographic mechanisms. Computer Communications, 111,
 120–141.
 <a href ="http://doi.org/10.1016/j.comcom.2017.07.006">DOI: 10.1016/j.comcom.2017.07.006 </a>
 <p class = "reference">
-Kalaiprasath, R., Elankavi, R., & Udayakumar, R. (2017). A NEW APPROACH FOR CLOUD
+Kalaiprasath, R., Elankavi, R., &amp; Udayakumar, R. (2017). A NEW APPROACH FOR CLOUD
 DATA SECURITY: FROM SINGLE TO CLOUD-OF-CLOUDS. International Journal On
-Smart Sensing & Intelligent Systems, 10, 604-613.
+Smart Sensing &amp; Intelligent Systems, 10, 604-613.
 <a href ="http://doi.org/10.21307/ijssis-2017-273">DOI: 10.21307/ijssis-2017-273 </a>
 <p class = "reference">
-Keegan, M. (2017). It takes just one mistake for a company to be hacked. Computer Fraud &
+Keegan, M. (2017). It takes just one mistake for a company to be hacked. Computer Fraud &amp;
 Security, 2017(4), 16–18.
 <a href ="http://doi.org/10.1016/S1361-3723(17)30033-7">DOI: 10.1016/S1361-3723(17)30033-7 </a>
 <p class = "reference">
-Kharod, S., Sharma, N., & Sharma, A. (2015). An improved hashing based password
+Kharod, S., Sharma, N., &amp; Sharma, A. (2015). An improved hashing based password
 security scheme using salting and differential masking. In 2015 4th International Conference
 on Reliability, Infocom Technologies and Optimization (ICRITO) (Trends and Future
 Directions) (pp. 1–5). Noida, India: IEEE.
@@ -216,20 +216,20 @@ Poh, G., Baskaran, V., Chin, J., Mohamad, M., Lee, K., Maniam, D. and Z’aba, M
 Searchable Data Vault: Encrypted Queries in Secure Distributed Cloud Storage. Algorithms,
 10(2), p.1-19.
 <a href ="http://doi.org/10.3390/a10020052">DOI:10.3390/a10020052 </a>
-Raschke, R. L., & Mann, A. (2017). Enterprise Content Risk Management: A Conceptual
+Raschke, R. L., &amp; Mann, A. (2017). Enterprise Content Risk Management: A Conceptual
 Framework for Digital Asset Risk Management. Journal of Emerging Technologies in
 Accounting, 14(1), 57–62.
 <a href ="http://doi.org/10.2308/jeta-51735">DOI: 10.2308/jeta-51735 </a>
 <p class = "reference">
-Ruivo, P., Santos, V., & Oliveira, T. (2014). Data Protection in Services and Support Roles –
+Ruivo, P., Santos, V., &amp; Oliveira, T. (2014). Data Protection in Services and Support Roles –
 a Qualitative Research amongst ICT Professionals. Procedia Technology, 16, 710–717.
 <a href ="http://doi.org/10.1016/j.protcy.2014.10.020">DOI: 10.1016/j.protcy.2014.10.020 </a>
 <p class = "reference">
-Singh, S., Jeong, Y.-S., & Park, J. H. (2016). A survey on cloud computing security: Issues,
+Singh, S., Jeong, Y.-S., &amp; Park, J. H. (2016). A survey on cloud computing security: Issues,
 threats, and solutions. Journal of Network and Computer Applications, 75, 200–222.
 <a href ="http://doi.org/10.1016/j.jnca.2016.09.002">DOI: 10.1016/j.jnca.2016.09.002 </a>
 <p class = "reference">
-Wilamowski, G., Dever, J., & Stuban, S. (2017). Using Analytical Hierarchy and Analytical
+Wilamowski, G., Dever, J., &amp; Stuban, S. (2017). Using Analytical Hierarchy and Analytical
 Network Processes to Create Cyber Security Metrics. Defense Acquisition Research
 Journal, 24(2), 186–221.
 <a href ="http://doi.org/10.22594/dau.16-760.24.02">DOI: 10.22594/dau.16-760.24.02 </a>
