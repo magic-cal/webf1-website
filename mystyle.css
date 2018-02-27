@@ -45,19 +45,33 @@ nav {
   width: 100%;
 }
 
+nav li {
+  margin-left: 0px;
+  margin-right: 0px;
+    display: inline-block;
+}
+
 nav ul {
   text-align: center;
 }
 
+
+nav li a{
+margin: 0;
+}
 nav li:hover {
   color: Black;
   background-color: #ff9800;
+  /*margin: -3px; */
 }
 
+<<<<<<< HEAD
 nav li {
   display: inline-block;
 }
 
+=======
+>>>>>>> 7a518e09076b9339a96f74dfef607707ad587c74
 ul {
   width: 100%;
 }
@@ -67,7 +81,13 @@ li a:not(#menu) {
   padding: 1rem;
   text-decoration: none;
   display: block;
+<<<<<<< HEAD
   font-size: 1rem;
+=======
+  font-size: 1em;
+
+
+>>>>>>> 7a518e09076b9339a96f74dfef607707ad587c74
 }
 
 .material-icons {}
