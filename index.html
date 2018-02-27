@@ -12,18 +12,16 @@
 
 <header>
   <h1>Home Page: 825573</h1>
-
-
 </header>
 <!-- <div id="circle"></div> -->
-<nav class=mainNav id = mainNavigation>
+<nav class=mainNav id=mainNavigation>
 
   <ul>
     <li class="pinned active"><a href="index.html">Home</a></li>
     <li> <a href="lit-review.html">Literature Review</a></li>
     <li><a href="discovery-log.html">Discovery Log</a></li>
     <li> <a href="video.html">Video</a></li>
-    <li id = "menu"> <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a></li>
+    <li id="menu"> <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a></li>
     <!-- class ="pinned" -->
     <!-- <li class="material-icons pinned" id ="menu" >menu</li> -->
   </ul>
@@ -41,8 +39,8 @@
 
     <picture>
       <source media="(min-width: 1080px)" srcset="images/uhd/portsmouth-landscape.jpg">
-       <source media="(min-width: 720px)" srcset="images/1080/portsmouth-landscape.jpg">
-         <source media="(min-width: 420px)" srcset="images/720/portsmouth-landscape.jpg">
+      <source media="(min-width: 720px)" srcset="images/1080/portsmouth-landscape.jpg">
+      <source media="(min-width: 420px)" srcset="images/720/portsmouth-landscape.jpg">
       <img src="images/720/portsmouth-landscape.jpg" alt="Landscape over portsmouth on sunny day">
     </picture>
 
@@ -55,21 +53,21 @@
 </main>
 
 <footer>
-    <p>Thanks for having a look!</p>
-      <a href="https://validator.w3.org/check?uri=referer"><img id ="html_valid" alt="HTML5 Validated" src="images/html5-validator.png"> </a>
-    <a href="http://jigsaw.w3.org/css-validator/check/referer"><img id ="css_valid" alt="CSS Validated" src="images/css-validator.png"> </a>
+  <p>Thanks for having a look!</p>
+  <a href="https://validator.w3.org/check?uri=referer"><img id ="html_valid" alt="HTML5 Validated" src="images/html5-validator.png"> </a>
+  <a href="http://jigsaw.w3.org/css-validator/check/referer"><img id ="css_valid" alt="CSS Validated" src="images/css-validator.png"> </a>
 </footer>
 
 
 <script>
-function myFunction() {
+  function myFunction() {
     var x = document.getElementById("mainNavigation");
     if (x.className === "mainNav") {
-        x.className += " responsive";
+      x.className += " responsive";
     } else {
-        x.className = "mainNav";
+      x.className = "mainNav";
     }
-}
+  }
 </script>
 
 </html>
