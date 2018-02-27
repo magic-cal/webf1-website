@@ -13,20 +13,16 @@
 <header>
   <h1>Home Page: 825573</h1>
 </header>
-<!-- <div id="circle"></div> -->
-<nav class=mainNav id=mainNavigation>
-
+<nav class=mainNav id=mainNavigation role="navigation" aria-label="main navigation">
   <ul>
     <li class="pinned active"><a href="index.html">Home</a></li>
     <li><a href="lit-review.html">Literature Review</a></li>
     <li><a href="discovery-log.html">Discovery Log</a></li>
     <li> <a href="video.html">Video</a></li>
-    <li id="menu"><a href="javascript:void(0);" onclick="myFunction()">&#9776;</a></li>
-    <!-- class ="pinned" -->
-    <!-- <li class="material-icons pinned" id ="menu" >menu</li> -->
+    <li id="menu"> <a aria-haspopup="true" aria-expanded="false" aria-label="Mobile Navigation Menu" href="javascript:void(0);" onclick="myFunction()">&#9776;</a></li>
   </ul>
 </nav>
-
+<!--U23800  U21264  U21269-->
 <main>
 
   <article class=Intro>
@@ -44,11 +40,8 @@
       <img src="images/720/portsmouth-landscape.jpg" alt="Landscape over portsmouth on sunny day">
     </picture>
 
-    <p class="flow-text">Throughout this site I will tell you about my experiences (good and bad) about studing at Portsmouth </p>
+    <p class="flow-text">This is a very nice view from Catherine house in Portsmouth. Although there are clouds in the sky, it is a nice day in Pompey.</p>
   </article>
-
-
-
 
 </main>
 
@@ -58,16 +51,6 @@
   <a href="http://jigsaw.w3.org/css-validator/check/referer"><img id ="css_valid" alt="CSS Validated" src="images/css-validator.png"> </a>
 </footer>
 
-
-<script>
-  function myFunction() {
-    var x = document.getElementById("mainNavigation");
-    if (x.className === "mainNav") {
-      x.className += " responsive";
-    } else {
-      x.className = "mainNav";
-    }
-  }
-</script>
+<script src="my-script.js"></script>
 
 </html>

@@ -32,11 +32,6 @@ header {
   text-align: center;
 }
 
-header h1 {
-  margin: 0;
-  display: inline-block;
-}
-
 nav {
   background-color: #1976D2;
   position: -webkit-sticky;
@@ -69,11 +64,7 @@ nav li {
   display: inline-block;
 }
 
-ul {
-  width: 100%;
-}
-
-li a:not(#menu) {
+nav li a:not(#menu) {
   color: white;
   padding: 1rem;
   text-decoration: none;
@@ -83,16 +74,11 @@ li a:not(#menu) {
 }
 
 #menu {
-  /* display: none; */
-  /* color: #03a9f4; */
-  /* background-color: #03a9f4; */
   float: right;
   margin-right: 15px;
   padding: inherit;
   font-size: 15px;
   display: none;
-  /* font-size: 10vw; */
-  /* margin: 15px; */
 }
 
 #circle {
@@ -105,7 +91,6 @@ li a:not(#menu) {
   position: -webkit-sticky;
   position: sticky;
   bottom: 100px;
-  /*right:20;*/
 }
 
 main {
@@ -136,14 +121,12 @@ article p, article h3 {
   margin-top: 1rem;
   text-align: justify;
   text-justify: inter-word;
-  /**/
 }
 
 article a {
   font-style: italic;
   color: #1976D2;
   font-size: 1rem;
-  /*color: #757575;*/
 }
 
 article i {
@@ -156,7 +139,6 @@ a {
 
 article video {
   width: 100%;
-  /* controls:false; */
 }
 
 article img {
@@ -180,6 +162,14 @@ article img {
   width: 5rem;
   float: left;
   display: inline;
+}
+
+cite {
+  text-align: justify;
+  text-justify: inter-word;
+  display: block;
+  color: green;
+  display: inline-block;
 }
 
 .validation {

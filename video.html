@@ -16,13 +16,13 @@
 
 </header>
 
-<nav class=mainNav id = mainNavigation>
+<nav class=mainNav id=mainNavigation role="navigation" aria-label="main navigation">
   <ul>
     <li class="pinned"><a href="index.html">Home</a></li>
     <li> <a href="lit-review.html">Literature Review</a></li>
     <li><a href="discovery-log.html">Discovery Log</a></li>
     <li class="active"> <a href="video.html">Video</a></li>
-    <li id = "menu"> <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a></li>
+    <li id="menu"> <a aria-haspopup="true" aria-expanded="false" aria-label="Mobile Navigation Menu" href="javascript:void(0);" onclick="myFunction()">&#9776;</a></li>
   </ul>
 </nav>
 
@@ -30,14 +30,14 @@
 
 <main>
   <article class=Intro>
-  <h2>Have a look at a video of mine</h2>
-  <p>
-    Here is a my home video section to demostrate using different formats and codecs.
-  </p>
+    <h2>Have a look at a video of mine</h2>
+    <p>
+      Here is a my home video section to demostrate using different formats and codecs.
+    </p>
   </article>
   <article class="video1">
     <h3>A calming breaking of waves on a pebbly beach</h3>
-  <video controls=controls>
+    <video controls=controls>
 
     <source src="videos/mp4/west-wittering.mp4" type="video/mp4">
         <source src="videos/mov/west-wittering.mov" type="video/mov">
@@ -51,21 +51,12 @@
 
 </main>
 <footer>
-    <p>Thanks for having a look!</p>
-      <a href="https://validator.w3.org/check?uri=referer"><img id ="html_valid" alt="HTML5 Validated" src="images/html5-validator.png"> </a>
-    <a href="http://jigsaw.w3.org/css-validator/check/referer"><img id ="css_valid" alt="CSS Validated" src="images/css-validator.png"> </a>
+  <p>Thanks for having a look!</p>
+  <a href="https://validator.w3.org/check?uri=referer"><img id ="html_valid" alt="HTML5 Validated" src="images/html5-validator.png"> </a>
+  <a href="http://jigsaw.w3.org/css-validator/check/referer"><img id ="css_valid" alt="CSS Validated" src="images/css-validator.png"> </a>
 </footer>
 
 
-<script>
-function myFunction() {
-    var x = document.getElementById("mainNavigation");
-    if (x.className === "mainNav") {
-        x.className += " responsive";
-    } else {
-        x.className = "mainNav";
-    }
-}
-</script>
+<script src="my-script.js"></script>
 
 </html>

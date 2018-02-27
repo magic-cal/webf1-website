@@ -18,14 +18,14 @@
 
 </header>
 <!-- <div id="circle"></div> -->
-<nav class="mainNav" id="mainNavigation">
+<nav class=mainNav id=mainNavigation role="navigation" aria-label="main navigation">
 
   <ul>
     <li class="pinned"><a href="index.html">Home</a></li>
     <li> <a href="lit-review.html">Literature Review</a></li>
     <li class="active"><a href="discovery-log.html">Discovery Log</a></li>
     <li> <a href="video.html">Video</a></li>
-    <li id="menu"> <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a></li>
+    <li id="menu"> <a aria-haspopup="true" aria-expanded="false" aria-label="Mobile Navigation Menu" href="javascript:void(0);" onclick="myFunction()">&#9776;</a></li>
     <!-- class ="pinned" -->
     <!-- <li class="material-icons pinned" id ="menu" >menu</li> -->
   </ul>
@@ -86,11 +86,11 @@
       <p> It is important to think about the user when planning a system so that they can easily find their way around your site. The most commonly used pages should be clear and easy to find. Using a heatmap progam may highlight issues within the design.
         <picture>
           <source media="(min-width: 1080px)" srcset="images/uhd/card-sort.jpg">
-           <source media="(min-width: 720px)" srcset="images/1080/card-sort.jpg">
-             <source media="(min-width: 420px)" srcset="images/720/card-sort.jpg">
+          <source media="(min-width: 720px)" srcset="images/1080/card-sort.jpg">
+          <source media="(min-width: 420px)" srcset="images/720/card-sort.jpg">
           <img src="images/720/card-sort.jpg" alt="Card sort organisation exercise">
         </picture>
-        </article>
+  </article>
   <article>
     <h3> Picture that </h3>
     <p> We were implimenting the use of IMG and PICTURE tags to show images on our sites. I was able to implement the extra reading that I had done to finish the tasks quickly.
@@ -115,28 +115,11 @@
 </main>
 
 <footer>
-    <p>Thanks for having a look!</p>
-      <a href="https://validator.w3.org/check?uri=referer"><img id ="html_valid" alt="HTML5 Validated" src="images/html5-validator.png"> </a>
-    <a href="http://jigsaw.w3.org/css-validator/check/referer"><img id ="css_valid" alt="CSS Validated" src="images/css-validator.png"> </a>
+  <p>Thanks for having a look!</p>
+  <a href="https://validator.w3.org/check?uri=referer"><img id ="html_valid" alt="HTML5 Validated" src="images/html5-validator.png"> </a>
+  <a href="http://jigsaw.w3.org/css-validator/check/referer"><img id ="css_valid" alt="CSS Validated" src="images/css-validator.png"> </a>
 </footer>
 
-
-<!--  -->
-<!--[if IE]>
-  <script>
-    alert("You are using an outdated internet browser (Internet Explorer).\nPlease considerupdating for a better user experience");
-  </script>
-<![endif]-->
-
-<script>
-  function myFunction() {
-    var x = document.getElementById("mainNavigation");
-    if (x.className === "mainNav") {
-      x.className += " responsive";
-    } else {
-      x.className = "mainNav";
-    }
-  }
-</script>
+<script src="my-script.js"></script>
 
 </html>
