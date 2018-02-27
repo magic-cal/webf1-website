@@ -46,20 +46,26 @@ nav {
 
 }
 
+nav li {
+  margin-left: 0px;
+  margin-right: 0px;
+    display: inline-block;
+}
+
 nav ul {
   text-align: center;
 
 }
 
+
+nav li a{
+margin: 0;
+}
 nav li:hover {
   color: Black;
   background-color: #ff9800;
+  /*margin: -3px; */
 }
-
-li {
-  display: inline-block;
-}
-
 
 ul {
   width: 100%;
@@ -71,6 +77,8 @@ li a:not(#menu){
   text-decoration: none;
   display: block;
   font-size: 1em;
+
+
 }
 
 .material-icons {
