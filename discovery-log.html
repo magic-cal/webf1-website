@@ -1,4 +1,3 @@
-<!-- -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,7 +17,7 @@
 
 </header>
 <!-- <div id="circle"></div> -->
-<nav class=mainNav id=mainNavigation role="navigation" aria-label="main navigation">
+<nav class=mainNav id=mainNavigation aria-label="main navigation">
 
   <ul>
     <li class="pinned"><a href="index.html">Home</a></li>
@@ -39,9 +38,10 @@
   </article>
 
   <article>
-    <h3> First entry to the Discovery log </h3>
+    <h3> First entry to the Discovery log  </h3>
     <p> As someone who has not done much HTML and CSS, this will be filled with things that I have learned throughout these practicals and lectures.
-      <p> We started working with our VM's for Portsmouth. Learning how to access them and how to use them.
+      <p> We started working with our VM's for Portsmouth. Learning how to access them and how to use them. <img id="google-cloud" src="images/google-cloud.svg" alt="google cloud logo">
+
         <p> I had a look at identifying good and bad websites online. Why a simple website that is easy to use is lots better than a site that is convered with moving elements and very bright distracting elements. The user should know what to do with your
           site and shoud not have to dig for functionality. </article>
   <article>
@@ -53,11 +53,23 @@
           <li>Private - Things that only a few things/services should know</li>
           <li>Secret - Things that only <strong>you</strong> should know.</li>
         </ul>
-        <p> By doing these and listing all the data stored, we realiese how much data can and is stored about each of us. </article>
+        <p> By doing these and listing all the data stored, we realiese how much data can and is stored about each of us. I did some further research into some areas where data is collected that we don't realise. I found an interesting article in the guardian
+          detailing a popular fitness app revealing locations of secret military bases:
+          <a href="https://www.theguardian.com/world/2018/jan/28/fitness-tracking-app-gives-away-location-of-secret-us-army-bases">Article in the guardian</a> </article>
   <article>
     <h3> Literature review </h3>
-    <p> Starting with the title of "<i>Mitigating Corporate Information Exposure On The Web</i>" we kicked off with research for this.
-      <p> I did research of the most commonly used methods people use to exploit. </article>
+    <p> Starting with the title of <q>Mitigating Corporate Information Exposure On The Web</q> we kicked off with research for this.
+      <p> I did research of the most commonly used methods people use to exploit. the most common ones I found were:
+        <ul>
+          <li> Phishing Attacks </li>
+          <li> SQL Injection Attacks (SQLi) </li>
+          <li> Cross-Site Scripting (XSS) </li>
+          <li> Man-in-the-Middle (MITM) Attacks </li>
+          <li> Malware Attacks </li>
+          <li> Denial-of-Service Attacks </li>
+        </ul>
+        <p>Surprisingly most commonly the cause of a databreach was through human error or falts that can be traced back to lack of Knowledge or mistakes leading to loss or theft of data
+  </article>
   <article>
     <h3> Improving writing skills </h3>
     <p> We were asked to think about what we say and write on a regular basis. The emphasis was on making whatever we communicate the most clear and appropriate for the reader.
@@ -66,20 +78,52 @@
   <article>
     <h3> Start of Mark(up) </h3>
     <p> We started working with HTML and using it with our virtual machines. Although having known about some markup before, I had not worked with just HTML5. This requires the doctype element to be present.
+      <pre><code>&lt;!DOCTYPE html&gt;</code></pre>
       <p> I used the FTP protocol to upload my tester sites to myvm and test them out by accessing their ip address. By doing this, I now understand about structuring of websites and that the HTTP protocol will automatically point to a index.html file if
         present.
-        <p> For further reading I looked at how to add images alongside the text with the img tag. This was then highlighted as you should use the picture tag to show the appropriate sized file for the device </article>
+        <p> For further reading I looked at how to add images alongside the text with the img tag. This was then highlighted as you should use the picture tag to show the appropriate sized file for the device
+          <pre><code> &lt;picture>
+      &lt;source media="(min-width: 650px)" srcset="earth.jpg">
+      &lt;source media="(min-width: 465px)" srcset="uk.jpg">
+      &lt;img src="images/earth.jpg" alt="satellite image from space">
+ &lt;/picture>"	</pre></code>
+
+          See this in action below. Try resizing the window.
+
+          <picture>
+            <source media="(min-width: 650px)" srcset="images/earth.jpg ">
+            <source media="(min-width: 500px)" srcset="images/uk.jpg ">
+            <img src="images/uk.jpg" alt="satellite image from space">
+          </picture>
+  </article>
+
   <article>
     <h3> Style (work it!) </h3>
     <p> Working with stylesheets today to change the appearance of the site. By using sets of rules that override one another, you can specify styles for different elements.
       <p> By using style sheets (CSS) it makes it easier to update and change things in the site as all of the data controling many elements is all in one place.
-        <p> Although stylesheets are very useful, they should be linked into the website and should <strong>not</strong> be embedded.
-          <p> By playing around with ID (#) and class (.) selectors, I found very powerful ways to change the styles of very specific elements on my page and differentiate between elements of the same type. </article>
+        <p> Although stylesheets are very useful, they should be linked into the website and should <strong>not</strong> be embedded. you can line a stylesheet like this:
+
+          <pre><code>&lt;link href="mystyle.css" rel="stylesheet" title="Default"&gt;</pre></code>
+          Above is the code that is implemented in this site.
+          <p> By playing around with ID (#) and class (.) selectors, I found very powerful ways to change the styles of very specific elements on my page and differentiate between elements of the same type.
+
+  </article>
   <article>
     <h3> Shortcuts to productivity </h3>
     <p> We worked lots with atom and VIM to maximise efficency whille coding. By adding shortcuts, packages and inbuilt aids, we can speed up monotonous tasks to become better and faster.
-      <p>
+      <p> At home I looked at which IDE's I would most like to use to create my site. Having tried a few. I narrowed it down to Visual Studio Code and ATOM. Having worked lots with VIM and the shortcuts, I found ATOM easier to use and it was already included
+        in the uni's software package.
+        <img id="atom" src="images/atom.png" alt="atom logo">
   </article>
+
+  <article>
+    <h3>Putting Logs on site</h3>
+    <p>Today I started to markup my logs so that they would go on the site nicely. I looked at appropriate ways of adding them and I found the &lt;article&gt; tag. I used this in combination with the various heading tags: h1,h2,h3,h4 and p, img, picture
+      tags. to make it look nice.
+
+  </article>
+
+
   <article>
     <h3> Design and planning </h3>
     <p> We learned the importance of orgaisation on your website. If you have lots of entries and pages, it may be difficult to find all of it. By planning headings ans sub headings of your pages, it can make it easier to catagorise them.
@@ -98,11 +142,22 @@
   <article>
     <h3> Validator </h3>
     <p> By using the validator with code that we had previously written, it highlighted out of date elements and things we shouldn't be using with a modern browser.
-      <p> Things that the validator picks up are when I had mis-typed elements, used variables, not used the correct syntax and outdated elements. </article>
+      <p> Things that the validator picks up are when I had mis-typed elements, used variables, not used the correct syntax and outdated elements.
+
+  </article>
   <article>
     <h3> Whats the address? </h3>
     <p> We focused on where each element points to within a site. Structure is very important so that each section points to the correct file.
-      <p> Index.html is found first and is shown to the client. Other specific file names are picked up by the http protocol.
+      <p> Index.html is found first and is shown to the client. Other specific file names are picked up by the http protocol. Alternatve to http, here are some other protocols:
+
+        <ul>
+          <li>ftp://</li>
+          <li>http://</li>
+          <li>https://</li>
+          <li>file://</li>
+          <li>mailto: &lt; this is used to send emails</li>
+        </ul>
+
         <p> The two types of links (relative and absolute) are important as they can reference files from wherever it is stored as apposed to just one place where it is saved. </article>
   <article>
     <h3> Click............Here </h3>
