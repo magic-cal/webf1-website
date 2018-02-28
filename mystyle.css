@@ -77,8 +77,16 @@ nav li a:not(#menu) {
 #menu {
   float: right;
   margin-right: 15px;
-  padding: inherit;
   font-size: 15px;
+  height: 55px;
+  width: 55px;
+  position: relative;
+  top: -29px;
+  background-color: #03a9f4;
+  color: #03a9f4;
+  border: solid 1px;
+  padding: 1px;
+  border-radius: 50%;
   display: none;
 }
 
@@ -278,14 +286,10 @@ footer p {
     transition: ease 1s;
     top: 0px;
   }
+  h2 {
+    text-align: left;
+  }
   #menu {
     display: block;
-    position: relative;
-    top: -25px;
-    background-color: #03a9f4;
-    color: #03a9f4;
-    border: solid 1px;
-    padding: 1px;
-    border-radius: 100%;
   }
 }
