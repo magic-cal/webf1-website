@@ -39,12 +39,14 @@ nav {
   top: 0;
   width: 100%;
   z-index: 1;
+  font-size: 0;
 }
 
 nav li {
   margin-left: 0px;
   margin-right: 0px;
   display: inline-block;
+  font-size: initial;
 }
 
 nav ul {
