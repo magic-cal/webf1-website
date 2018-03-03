@@ -30,6 +30,8 @@ header {
   top: 0;
   width: 100%;
   text-align: center;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 8px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 nav {
@@ -40,6 +42,7 @@ nav {
   width: 100%;
   z-index: 1;
   font-size: 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 8px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 nav li {
@@ -49,7 +52,7 @@ nav li {
   font-size: initial;
 }
 
-nav ul {
+nav > ul {
   text-align: center;
 }
 
@@ -63,9 +66,6 @@ nav li:hover {
   /*margin: -3px; */
 }
 
-nav li {
-  display: inline-block;
-}
 
 nav li a:not(#menu) {
   color: white;
@@ -90,8 +90,9 @@ nav li a:not(#menu) {
   padding: 1px;
   border-radius: 50%;
   display: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 8px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
+/*
 #circle {
   width: 35px;
   height: 35px;
@@ -102,25 +103,9 @@ nav li a:not(#menu) {
   position: -webkit-sticky;
   position: sticky;
   bottom: 100px;
-}
+} */
 
-#google-cloud {
-  height: 1rem;
-  width: auto;
-  display: inline-block;
-  position: relative;
-}
 
-#atom {
-  max-width: 10em;
-  height: auto;
-  margin: 1em auto;
-  padding: 1em;
-  display: block;
-  background-color: #ff9800;
-  border: solid 2px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 8px 20px 0 rgba(0, 0, 0, 0.19);
-}
 
 main {
   margin-top: 10px;
@@ -146,7 +131,7 @@ article {
   border: 1px solid #ff9800;
 }
 
-pre {
+article > pre {
   /* border: dashed 1px; */
   background-color: #C0C0C0;
   color: #000;
@@ -154,6 +139,8 @@ pre {
   margin-top: 1em;
   margin-bottom: 1em;
   white-space: pre-wrap;
+    word-break: break-all;
+
 }
 
 article p, article h3 {
@@ -175,20 +162,25 @@ article i {
 
 a {
   word-break: break-all;
+  text-decoration: none;
 }
 
-article video {
-  width: 100%;
-}
 
-article img, article picture {
+a:link { color: #03a9f4; }
+
+
+article img, article video{
   width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 8px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 article li {
   margin-left: 2rem;
 }
 
+.noShadow{
+  box-shadow: none;
+}
 #download {
   display: block;
   text-align: center
@@ -207,6 +199,25 @@ article li {
   float: left;
   display: inline;
 }
+
+#google-cloud {
+  height: 1rem;
+  width: auto;
+  display: inline-block;
+  position: relative;
+  box-shadow: none;
+}
+
+#atom {
+  max-width: 10em;
+  height: auto;
+  margin: 1em auto;
+  padding: 1em;
+  display: block;
+  background-color: #ff9800;
+  border: solid 2px;
+}
+
 
 cite {
   text-align: justify;
@@ -240,13 +251,6 @@ footer {
   height: auto;
   min-height: 5rem;
   background-color: #1976D2;
-}
-
-iframe {
-  display: none;
-  overflow-x: hidden;
-  overflow-y: hidden;
-  color: red;
 }
 
 footer p {
